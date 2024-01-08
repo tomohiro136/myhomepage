@@ -96,7 +96,7 @@ h1,p{
 main{
     outline: 1px red solid;
     padding:8px 16px;
-    background: url(img/b119.jpg);
+    background: url(/img/b119.jpg);
 }
 
 .jikoku{
