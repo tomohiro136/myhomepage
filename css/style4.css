@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* common */
+body{
+    margin: 0;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+.btn{
+    /* width: 200px; */
+    display: inline-block;
+    color: white;
+    background: green;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+h2{
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3{
+    margin: 0;
+    font-weight: normal;
+}
+p{
+    margin: 0;
+}
+
+.container{
+    /* background-color: pink; */
+    max-width: 800px;
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+}
+
+/* header */
+.header{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 16px; */
+    padding: 16px 0;
+}
+
+.logo-pc{
+    display: none;
+}
+
+h1{
+    margin: 0;
+    font-size: 0;
+}
+
+
+/* hero */
+
+.hero{
+    background-color: skyblue;
+    background-image: url(/img4/bg.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    text-align: center;
+    padding-top: 64px;
+}
+
+.hero-img{
+    margin-top: 64px;
+}
+
+.hero .btn{
+    margin-top: 64px;
+}
+
+
+/* features */
+
+.features{
+    padding: 64px 0;
+}
+
+.feature{
+    margin-top: 64px;
+}
+
+.feature .pic{
+    text-align: center;
+}
+
+.feature h3{
+    margin-top: 16px;
+}
+
+.feature p{
+    margin-top: 16px;
+}
+
+/* footer */
+footer{
+    background: #333;
+    color: white;
+    padding: 64px 0;
+    text-align: center;
+}
+
+footer small{
+    /* smallはインライン要素 */
+    font-size: 14px;
+}
+
+/*  large screen*/
+
+@media (min-width:  600px){
+    body{
+        /* background-color: pink; */
+    }
+
+    /* header */
+    .logo-sp{
+        display: none;
+    }
+    .logo-pc{
+        display: inline;
+    }
+
+    /* hero */
+    .hero .container{
+        display: flex;
+        align-items: center;
+    }
+
+    .hero .container div{
+        flex: 1;
+    }
+
+    .hero-img{
+        margin-top: 0;
+    }
+    
+    /* feature */
+
+    .feature{
+        display: flex;
+        gap: 32px;
+    }
+
+    .pic{
+        width: 300px;
+    }
+
+    .desc{
+        flex: 1;
+    }
+
+    .reverced{
+        flex-direction: row-reverse;
+    }
+
+}

@@ -1,0 +1,326 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    font-size: 14px;
+}
+
+h1,p{
+    margin: 0;
+    /* line-height: 30px; */
+}
+
+
+/* headerの話 */
+.header{
+    display: flex;
+    padding: 0 16px;
+}
+
+.header h1{
+    line-height: 64px;
+}
+
+.sp-menu{
+    margin-left: auto;
+}
+
+#open {
+    font-size: 32px;
+    line-height: 64px;
+    cursor: pointer;
+}
+
+/* menuクリック後の話 */
+.over-lay{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.95);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+
+.over-lay.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.over-lay ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.over-lay ul li{
+    margin-top: 24px;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .3s, transform .3s;
+}
+
+.over-lay.show li:nth-child(1){
+    transition-delay: .1s;
+}
+.over-lay.show li:nth-child(2){
+    transition-delay: .2s;
+}
+.over-lay.show li:nth-child(3){
+    transition-delay: .3s;
+}
+
+.over-lay.show li{
+    opacity: 1;
+    transform: none;
+}
+
+
+#close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.sp-menu #open.hide{
+    display: none;
+}
+
+
+/* mainの話 */
+main{
+    outline: 1px red solid;
+    padding:8px 16px;
+    background: url(/img/b119.jpg);
+}
+
+.jikoku{
+    width: 400px;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+}
+
+.kiji{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kiji2{
+    padding:8px 16px;
+}
+
+.kiji-a{
+    display: block;
+}
+
+.pc-menu{
+    display: none;
+}
+
+h1{
+    font-size: 28px;
+}
+
+@media(min-width:600px){
+    .pc-menu{
+        display: block;
+        margin-left: auto;
+    }
+
+    .pc-menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .pc-menu ul li a{
+        display: block;
+        width: 80px;
+        line-height: 64px;
+        text-align: center;
+    }
+    .pc-menu a:hover{
+        background: #f2f2f2;
+    }
+
+    .sp-menu{
+        display: none;
+    }
+
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
